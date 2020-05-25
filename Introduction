@@ -1,1 +1,10 @@
+Framework vs Library
+
+FrontEnd Frameworks
+> Larger JS libraries
+> Opinionated
+> Provide blueprint for apps
+
+
+React is a javascript library but is much more powerful and if we include tools like redux react routers so its provides similar features as angular or vue.
 
