@@ -8,3 +8,8 @@ FrontEnd Frameworks
 
 React is a javascript library but is much more powerful and if we include tools like redux react routers so its provides similar features as angular or vue.
 
+
+Components:
+Reusable codes for functionalities combined. 
+for example combined js, html, css for a button functionality is written as react component. 
+
