@@ -51,7 +51,7 @@ return (
 <div>
 <h1> Your number is: {num} </h1>
 <p> {num===7 ? 'Congratulations':'Loser'} </p>
-
+<p> {num===7 ? <img src="" />:null} </p>
 </div>
 
 );
