@@ -1,0 +1,5 @@
+Component files should be made separate 
+
+Example Hello Component should be written in Hello.js button component should be written in button.js.
+
+They should be finally rendered into App component which is conventionally written in index.js and all the scripts are included in index.html and hello.js script should be placed before index.js.
