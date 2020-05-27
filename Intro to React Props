@@ -27,6 +27,8 @@ return(
 ReactDOM.render(<App />, document.getElementById('root'));
 
 
+React props are immutable
+
 in Hello.js
 
 class Hello extends React.Component{
