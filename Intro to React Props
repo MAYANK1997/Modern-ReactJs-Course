@@ -1,0 +1,45 @@
+React properties makes the components more customizable.
+
+Example
+
+Suppose we have a single component <Hello>
+
+Now in our App component we include two Hello Component but want want different data to be displayed by the same component. 
+So we take the use of react props. 
+
+in index.js
+
+class App extends React.Component{
+
+render(){
+return(
+<div>
+
+<Hello to="A" from="B" />
+<Hello to="C" from="D" />
+
+</div>
+);
+}
+
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+in Hello.js
+
+class Hello extends React.Component{
+
+render(){
+return(
+
+<p> Hi! {this.props.to} from {this.props.from} </p>
+
+
+);
+
+}
+
+}
+
