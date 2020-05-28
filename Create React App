@@ -1,0 +1,57 @@
+Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.
+CRA is built on top of WebPack a Js utility that:
+
+Enables module importing/exporting
+
+> Packages up all CSS/HTML/JS into a single file for browser
+> Dramaticaly reduces number of HTTP requests for perormancer
+
+
+Hot Reloading:
+
+When you change file it automatically reloads
+Enables easy testing/deployment
+
+Lessons on import/export
+
+index.js
+
+import foods from './foods';
+
+import {choose, remove} from './helpers';
+
+
+let fruits = choose(foods);
+
+console.log(`You choose ${fruits} `);
+
+
+helpers.js
+
+let choose = (ar)=>{
+
+return ar[Math.floor(Math.random()*ar.length)];
+
+
+}
+
+let remove = (ar,item)=>{
+
+    for(let i=0; i<ar.length;i++){
+
+      if(ar[i]===item){
+          return [...ar.slice(0,i), ,,,ar.slice(i)];
+      }
+
+    }
+    
+    
+}
+    
+export {choose, remove};
+
+foods.js
+const foods = ["a","b","c","d","e","f","g","h"];
+
+export default foods;
+
